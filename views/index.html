@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>Moozak</title>
+    <meta charset="utf-8">
+
+    <script>
+        var appname = "{{app_name}}"; //app name (id) of this app
+        var appurl = "{{&app_url}}";
+        var staticurl = "{{&static_url}}"; //base path to your static files /static/apps/yourapp
+    </script>
+    <link href="/static/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script src="/static/js/jquery-1.11.3.js"></script>
+    <script src="/static/js/index.js"></script>
+
+
+
+    <!-- This app's includes -->
+    <link href="{{&static_url}}/css/index.css" media="screen" rel="stylesheet" type="text/css"/>
+    <script src="{{&static_url}}/js/index.js"></script>
+    <!-- End apps includes -->
+</head>
+<body>
+    
+<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div>
+    <audio id="cAudio">
+        <source src="/static/media/download/audiocheck.net_C3.wav" type="audio/wav"></source>   
+    </audio>
+    <audio id="dAudio">
+        <source src="/static/media/download/audiocheck.net_D3.wav" type="audio/wav"></source>   
+    </audio> 
+    <audio id="eAudio">
+        <source src="/static/media/download/audiocheck.net_E3.wav" type="audio/wav"></source>      
+    </audio>
+    <audio id="fAudio">
+        <source src="/static/media/download/audiocheck.net_F3.wav" type="audio/wav"></source>      
+    </audio>
+    <audio id="gAudio">
+        <source src="/static/media/download/audiocheck.net_G3.wav" type="audio/wav"></source>      
+    </audio>
+    <audio id="aAudio">
+        <source src="/static/media/download/audiocheck.net_A3.wav" type="audio/wav"></source>      
+    </audio>
+    <audio id="bAudio">
+        <source src="/static/media/download/audiocheck.net_B3.wav" type="audio/wav"></source>      
+    </audio>
+    <audio id="c2Audio">
+        <source src="/static/media/download/audiocheck.net_C4.wav" type="audio/wav"></source>   
+    </audio>
+
+    <div id= "instrument">   
+        <div id= "c" class="box"></div>        
+        <div id= "d" class="box"></div>
+        <div id= "e" class="box"></div>
+        <div id= "f" class="box"></div>
+        <div id= "g" class="box"></div>
+        <div id= "a" class="box"></div>
+        <div id= "b" class="box"></div>
+        <div id= "c2" class="box"></div>
+    </div>
+
+
+</body>
+</html>
